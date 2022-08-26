@@ -16,4 +16,4 @@ import './assets/styles/style.css';
 //   document.getElementById('root'),
 // );
 
-console.log('HELLO 25');
+console.log('HELLO 30');
