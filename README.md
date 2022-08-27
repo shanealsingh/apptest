@@ -7,7 +7,7 @@ A simple and complete Webpack 4 React Boilerplate.
 * SASS and CSS loaders configured :art:
 * Hot reload configured :sunny:
 * Unit test tools configured :microscope:
-* Production build optimized :chart_with_upwards_trend:
+* Production bddduild optimized :chart_with_upwards_trend:
 
 ## Motivation
 
