@@ -4,10 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh (
-                    script: "BRANCH_NAME $env.BRANCH_NAME",
-                    returnStdout: true
-                ).trim()
+              echo 'BRANCH_NAME' env.BRANCH_NAME
             }
         }
         stage('Test') {
