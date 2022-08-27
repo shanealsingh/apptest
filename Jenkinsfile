@@ -1,3 +1,13 @@
+void setBuildStatus(String message, String state) {
+  step([
+      $class: "GitHubCommitStatusSetter",
+      reposSource: [$class: "ManuallyEnteredRepositorySource", url: "https://github.com/my-org/my-repo"],
+      contextSource: [$class: "ManuallyEnteredCommitContextSource", context: "ci/jenkins/build-status"],
+      errorHandlers: [[$class: "ChangingBuildStatusErrorHandler", result: "UNSTABLE"]],
+      statusResultSource: [ $class: "ConditionalStatusResultSource", results: [[$class: "AnyBuildResult", message: message, state: state]] ]
+  ]);
+}
+
 pipeline {
     agent any
 
@@ -14,11 +24,12 @@ pipeline {
                     echo 'GIT_COMMIT:' $GIT_COMMIT
                     echo 'GIT_BRANCH:' $GIT_BRANCH
                 """
+                setBuildStatus("Build complete", "SUCCESS");
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+              echo 'Testing...'
             }
         }
         stage('Deploy') {
