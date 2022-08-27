@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh """
-                    echo 'BRANCH_NAME' $BRANCH_NAME
+                    'BRANCH_NAME' $BRANCH_NAME
                 """
             }
         }
