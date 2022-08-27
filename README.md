@@ -7,11 +7,11 @@ A simple and complete Webpack 4 React Boilerplate.
 * SASS and CSS loaders configured :art:
 * Hot reload configured :sunny:
 * Unit test tools configured :microscope:
-* Production build optimized :chart_with_upwards_trend:
+* Production bddduild optimized :chart_with_upwards_trend:
 
 ## Motivation
 
-The purpose of this boilerplate is help to create new apps and projects. It's _easy to customize_ and if you need help to understand you can check the commits for a _step-by-step_ guide.
+The purpose of this boilerplate is help to create new apps and projects. It's _easy to customize_ andr23r23r23 if you need help to understand you can check the commits for a _step-by-step_ guide.
 
 It´s a solid base which will help to understand webpack [core concepts](https://webpack.js.org/concepts/).
 
