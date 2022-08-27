@@ -13,7 +13,6 @@ pipeline {
                     echo 'BUILD_ID:' $BUILD_ID
                     echo 'GIT_COMMIT:' $GIT_COMMIT
                     echo 'GIT_BRANCH:' $GIT_BRANCH
-                    echo 'GIT_CHECKOUT_DIR:' $GIT_CHECKOUT_DIR
                 """
             }
         }
