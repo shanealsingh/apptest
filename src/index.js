@@ -16,4 +16,4 @@ import './assets/styles/style.css';
 //   document.getElementById('root'),
 // );
 
-console.log('HELLO WORLD red');
+console.log('HELLO 1001');
